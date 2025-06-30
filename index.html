@@ -6,59 +6,78 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Экопульс — экологичная упаковка для HoReCa</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <style>
     body { font-family: 'Helvetica Neue', sans-serif; }
   </style>
 </head>
-<body class="bg-white text-gray-900">
+<body class="bg-[#f7faf7] text-gray-900">
 
-  <!-- Hero -->
-  <section class="bg-green-100 py-20 px-6 text-center">
-    <h1 class="text-5xl font-bold mb-6">Экологичная упаковка для HoReCa</h1>
-    <p class="text-xl text-gray-700 max-w-2xl mx-auto mb-8">
-      Для кофеен, ресторанов и доставки. Современная альтернатива пластику — помогает выделяться, продавать дороже и заботиться об экологии.
-    </p>
-    <a href="#contact" class="inline-block bg-green-600 text-white py-4 px-8 rounded-xl text-lg hover:bg-green-700 transition">
-      Получить прайс
-    </a>
+  <!-- Header -->
+  <header class="flex justify-between items-center px-6 py-4 bg-white shadow">
+    <div class="text-2xl font-bold text-green-700">Экопульс</div>
+    <a href="#contact" class="text-green-700 font-medium hover:underline">Получить прайс</a>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="text-center py-24 px-4 bg-green-50" data-aos="fade-up">
+    <h1 class="text-5xl font-bold mb-4">Экологичная упаковка для кофеен, ресторанов и доставки</h1>
+    <p class="text-lg text-gray-600 max-w-2xl mx-auto mb-6">Современная альтернатива пластику — помогает выделяться, продавать дороже и быть полезным</p>
+    <a href="#contact" class="bg-green-700 text-white py-3 px-8 rounded-xl text-lg hover:bg-green-800 transition">Получить прайс</a>
   </section>
 
   <!-- Benefits -->
-  <section class="py-16 px-6 max-w-6xl mx-auto">
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center text-lg">
-      <div class="bg-white shadow p-6 rounded-xl">
-        <p class="text-2xl font-bold mb-2">+10% к чеку</p>
-        <p>Повышает лояльность гостей и имидж бренда</p>
+  <section class="py-20 px-4 bg-white">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center text-lg" data-aos="fade-up" data-aos-delay="100">
+      <div>
+        <h3 class="text-2xl font-bold mb-2">+10% к чеку</h3>
+        <p>Упаковка влияет на восприятие бренда и позволяет продавать дороже</p>
       </div>
-      <div class="bg-white shadow p-6 rounded-xl">
-        <p class="text-2xl font-bold mb-2">100% эко</p>
-        <p>Биоразлагаемые и сертифицированные материалы</p>
+      <div>
+        <h3 class="text-2xl font-bold mb-2">100% Эко</h3>
+        <p>Биоразлагаемые сертифицированные материалы</p>
       </div>
-      <div class="bg-white shadow p-6 rounded-xl">
-        <p class="text-2xl font-bold mb-2">Без сложностей</p>
+      <div>
+        <h3 class="text-2xl font-bold mb-2">Без сложностей</h3>
         <p>Переход без потери качества и удобства</p>
       </div>
     </div>
   </section>
 
+  <!-- Gallery -->
+  <section class="py-20 px-6 bg-[#f2f6f1]" data-aos="fade-up" data-aos-delay="150">
+    <h2 class="text-3xl font-bold text-center mb-10">Примеры продукции</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-6xl mx-auto">
+      <div class="bg-white rounded-xl shadow h-40 flex items-center justify-center text-gray-400">Фото 1</div>
+      <div class="bg-white rounded-xl shadow h-40 flex items-center justify-center text-gray-400">Фото 2</div>
+      <div class="bg-white rounded-xl shadow h-40 flex items-center justify-center text-gray-400">Фото 3</div>
+      <div class="bg-white rounded-xl shadow h-40 flex items-center justify-center text-gray-400">Фото 4</div>
+    </div>
+  </section>
+
   <!-- Contact -->
-  <section id="contact" class="bg-green-50 py-20 px-6 text-center">
-    <h2 class="text-3xl font-bold mb-6">Оставить заявку</h2>
-    <p class="mb-4 text-gray-700">Заполните форму — мы свяжемся с вами, вышлем прайс и подберем упаковку</p>
+  <section id="contact" class="bg-green-100 py-20 px-6 text-center">
+    <h2 class="text-3xl font-bold mb-4">Оставьте заявку</h2>
+    <p class="text-gray-600 mb-6">Мы подберем упаковку под ваш бизнес и отправим актуальный прайс-лист</p>
     <form id="tg-form" class="max-w-xl mx-auto grid gap-4">
-      <input type="text" id="name" placeholder="Имя" class="border border-gray-300 p-4 rounded-xl" required>
-      <input type="tel" id="phone" placeholder="Телефон или WhatsApp" class="border border-gray-300 p-4 rounded-xl" required>
+      <input type="text" id="name" placeholder="Имя" class="border border-gray-300 p-4 rounded-xl" required />
+      <input type="tel" id="phone" placeholder="Телефон или WhatsApp" class="border border-gray-300 p-4 rounded-xl" required />
       <textarea id="product" placeholder="Какая продукция вас интересует?" class="border border-gray-300 p-4 rounded-xl"></textarea>
-      <button type="submit" class="bg-green-600 text-white py-3 px-8 rounded-xl hover:bg-green-700 transition">Отправить</button>
+      <button type="submit" class="bg-green-700 text-white py-3 px-8 rounded-xl hover:bg-green-800 transition">Отправить</button>
     </form>
     <p id="status" class="mt-4 text-green-700 font-medium"></p>
   </section>
 
-  <footer class="py-8 text-center text-sm text-gray-400">
-    © 2025 Экопульс. Все права защищены.
+  <!-- Footer -->
+  <footer class="text-center text-sm text-gray-400 py-6 bg-white">
+    <p>© 2025 Экопульс. Все права защищены.</p>
+    <p>Email: info@ecopulse.ru | Телефон: +7 (999) 123-45-67</p>
   </footer>
 
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
+    AOS.init();
     const form = document.getElementById('tg-form');
     const status = document.getElementById('status');
     const token = '7789875642:AAGDOuHKVpmYus5Fmh0C5ROxqThPUAuylhg';
