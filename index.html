@@ -1,24 +1,50 @@
 
 <!DOCTYPE html>
-<html lang="="ru">
+<html lang="ru">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Экопульс — упаковка для HoReCa</title>
+  <title>Экопульс — экологичная упаковка для HoReCa</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { font-family: 'Helvetica Neue', sans-serif; }
+  </style>
 </head>
-<body class="bg-white text-gray-900 font-sans">
+<body class="bg-white text-gray-900">
 
-  <section class="bg-green-50 py-16 px-6 text-center">
-    <h1 class="text-4xl font-bold mb-4">Экологичная упаковка для кофеен, ресторанов, доставки</h1>
-    <p class="text-lg text-gray-600 max-w-2xl mx-auto mb-6">
-      Упаковка, которая подчёркивает ценности бренда: экологичность, заботу и современность.
+  <!-- Hero -->
+  <section class="bg-green-100 py-20 px-6 text-center">
+    <h1 class="text-5xl font-bold mb-6">Экологичная упаковка для HoReCa</h1>
+    <p class="text-xl text-gray-700 max-w-2xl mx-auto mb-8">
+      Для кофеен, ресторанов и доставки. Современная альтернатива пластику — помогает выделяться, продавать дороже и заботиться об экологии.
     </p>
-    <a href="#contact" class="inline-block bg-green-600 text-white py-3 px-8 rounded-xl text-lg hover:bg-green-700 transition">Получить прайс</a>
+    <a href="#contact" class="inline-block bg-green-600 text-white py-4 px-8 rounded-xl text-lg hover:bg-green-700 transition">
+      Получить прайс
+    </a>
   </section>
 
-  <section id="contact" class="bg-green-100 py-16 px-6 text-center">
+  <!-- Benefits -->
+  <section class="py-16 px-6 max-w-6xl mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center text-lg">
+      <div class="bg-white shadow p-6 rounded-xl">
+        <p class="text-2xl font-bold mb-2">+10% к чеку</p>
+        <p>Повышает лояльность гостей и имидж бренда</p>
+      </div>
+      <div class="bg-white shadow p-6 rounded-xl">
+        <p class="text-2xl font-bold mb-2">100% эко</p>
+        <p>Биоразлагаемые и сертифицированные материалы</p>
+      </div>
+      <div class="bg-white shadow p-6 rounded-xl">
+        <p class="text-2xl font-bold mb-2">Без сложностей</p>
+        <p>Переход без потери качества и удобства</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="bg-green-50 py-20 px-6 text-center">
     <h2 class="text-3xl font-bold mb-6">Оставить заявку</h2>
+    <p class="mb-4 text-gray-700">Заполните форму — мы свяжемся с вами, вышлем прайс и подберем упаковку</p>
     <form id="tg-form" class="max-w-xl mx-auto grid gap-4">
       <input type="text" id="name" placeholder="Имя" class="border border-gray-300 p-4 rounded-xl" required>
       <input type="tel" id="phone" placeholder="Телефон или WhatsApp" class="border border-gray-300 p-4 rounded-xl" required>
